@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saqer — صقر · Technology for the Gulf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="theme-color" content="#100b06">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<div class="bg-fixed"><img src="assets/desert.png" alt=""><div class="scrim"></div></div>
+
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#home">
+    <img src="assets/falcon.png" alt="Saqer falcon">
+    <span class="bw">Saqer</span>
+    <span class="ba">صقر</span>
+  </a>
+  <nav class="nav-links" id="navlinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#aboutp">About</a>
+    <a href="#contactp">Contacts</a>
+  </nav>
+</header>
+
+<div class="snap" id="snap">
+
+  <!-- HOME -->
+  <section class="panel panel--home inview" id="home" data-screen-label="Home">
+    <div class="screen-inner">
+      <button class="lang-toggle fx" id="langToggle" aria-label="Switch slogan language">ع</button>
+      <h1 class="home-h1 fx d2">
+        <span class="slogan slogan-en">Sharp vision.<br>Built to serve.</span>
+        <span class="slogan slogan-ar">رؤية حادة.<br>صُنعت للخدمة.</span>
+      </h1>
+      <p class="home-sub fx d3"><b>Saqer is an application development &amp; management company</b> — building and operating digital products for communities across the Gulf.</p>
+      <div class="home-foot">
+        <span class="meta">Est. 2026 — saqer.io</span>
+        <span class="meta">© 2026 Saqer · All rights reserved</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="panel" id="aboutp" data-screen-label="About">
+    <div class="screen-inner">
+      <div class="vm-grid">
+        <div class="vm-block fx d2">
+          <div class="vlabel">Vision <span class="ar">الرؤية</span></div>
+          <p class="vara">مجتمعٌ يزدهر — مُنجِزٌ، شفافٌ، ومترابط — تخدمه التقنية بالدقة والفخر اللذين طالما ميّزا أرقى ما أنجزناه.</p>
+          <p class="veng">A community that thrives — <span class="hl">accomplishing, transparent, and connected</span> — where technology serves people with the same precision and pride that has always defined our finest work.</p>
+        </div>
+        <div class="vm-block fx d3">
+          <div class="vlabel">Mission <span class="ar">المهمة</span></div>
+          <p class="vara">من خلال البحث والتطوير المستمر، نبني أدوات تخدم المجتمع وترفع مكانته — أثرها يُقاس بقدر نفعها للناس.</p>
+          <p class="veng">Through continuous research and development, we build tools that <span class="hl">serve and elevate</span> our community — measured by how much they benefit people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="panel panel--contacts" id="contactp" data-screen-label="Contacts">
+    <div class="screen-inner">
+      <div class="contact-grid">
+        <div class="contact-l">
+          <button class="lang-toggle fx" id="contactLangToggle" aria-label="Switch language">ع</button>
+          <h2 class="fx d2">
+            <span class="slogan slogan-en">Let's build something <span class="hl">for our community.</span></span>
+            <span class="slogan slogan-ar">لنبنِ شيئاً <span class="hl">لمجتمعنا.</span></span>
+          </h2>
+          <div class="socials fx d3">
+            <a href="https://www.linkedin.com/company/saqer" target="_blank" rel="noopener" aria-label="Saqer on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.16h4.56V23H.22V8.16zM8.34 8.16h4.37v2.02h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 6.99V23h-4.55v-7.21c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.87-2.77 3.8V23H8.34V8.16z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/saqer.io" target="_blank" rel="noopener" aria-label="Saqer on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"></rect><circle cx="12" cy="12" r="4.4"></circle><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form fx d3" id="cform">
+          <div class="field">
+            <label><span>Your email</span><span class="ar">بريدك الإلكتروني</span></label>
+            <input type="email" name="email" required placeholder="name@example.com">
+          </div>
+          <div class="field">
+            <label><span>Your message</span><span class="ar">رسالتك</span></label>
+            <textarea rows="4" name="message" required placeholder="Tell us what you have in mind…"></textarea>
+            <p class="contact-email-note">Alternatively, you can reach us at <a href="mailto:info@saqer.io">info@saqer.io</a></p>
+          </div>
+          <div class="send-row" id="sendrow">
+            <button class="send-btn" type="submit" id="sendbtn">Send message <span class="arr">→</span></button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-foot">
+        <span class="meta">saqer.io</span>
+        <span class="meta">© 2026 Saqer · All rights reserved</span>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <p>© 2026 Saqer.io — All rights reserved. Saqer Private Company for Software Design and Programming, Registered in Kuwait. Commercial Registration No. 549343</p>
+    <p class="footer-ar">شركة صقر تيك لتصميم وبرمجة البرمجيات الخاصة</p>
+  </footer>
+
+</div>
+
+<div class="cue" id="cue"><span class="dot"></span> Scroll</div>
+<div class="sdots" id="sdots"><i class="on"></i><i></i><i></i></div>
+
+<script>
+  const snap = document.getElementById('snap');
+  const panels = [...document.querySelectorAll('.panel')];
+  const navAs = [...document.querySelectorAll('.nav-links a')];
+  const sdots = [...document.querySelectorAll('#sdots i')];
+  const cue = document.getElementById('cue');
+  const nav = document.getElementById('nav');
+
+  // sticky nav — frosted glass on scroll
+  snap.addEventListener('scroll', () => nav.classList.toggle('solid', snap.scrollTop > 30), { passive: true });
+  nav.classList.toggle('solid', snap.scrollTop > 30);
+
+  let animTimer = null;
+  function goPanel(i) {
+    const target = panels[i].offsetTop;
+    clearInterval(animTimer);
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      snap.style.scrollSnapType = 'none';
+      snap.scrollTop = target;
+      syncActive();
+      setTimeout(() => { snap.style.scrollSnapType = ''; }, 50);
+      return;
+    }
+    const start = snap.scrollTop;
+    const dist = target - start;
+    if (!dist) return;
+    const dur = 750;
+    const t0 = performance.now();
+    const ease = t => t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+    snap.style.scrollSnapType = 'none';
+    animTimer = setInterval(() => {
+      const p = Math.min(1, (performance.now() - t0) / dur);
+      snap.scrollTop = start + dist * ease(p);
+      syncActive();
+      if (p >= 1) { clearInterval(animTimer); snap.style.scrollSnapType = ''; }
+    }, 16);
+  }
+  navAs.forEach((a, i) => a.addEventListener('click', e => { e.preventDefault(); goPanel(i); }));
+  document.querySelector('.nav-brand').addEventListener('click', e => { e.preventDefault(); goPanel(0); });
+  sdots.forEach((d, i) => d.addEventListener('click', () => goPanel(i)));
+
+  function syncActive() {
+    const pos = snap.scrollTop + snap.clientHeight * 0.35;
+    let i = 0;
+    panels.forEach((p, j) => { if (p.offsetTop <= pos) i = j; });
+    panels[i].classList.add('inview');
+    navAs.forEach((a, j) => a.classList.toggle('active', j === i));
+    sdots.forEach((d, j) => d.classList.toggle('on', j === i));
+    const atEnd = snap.scrollTop + snap.clientHeight >= snap.scrollHeight - 40;
+    cue.classList.toggle('hidden', atEnd || i === panels.length - 1);
+  }
+  snap.addEventListener('scroll', syncActive, { passive: true });
+  window.addEventListener('resize', syncActive);
+  syncActive();
+
+  // Home slogan language toggle
+  const langToggle = document.getElementById('langToggle');
+  const homePanel = document.getElementById('home');
+  function applyLang(lang) {
+    homePanel.classList.toggle('lang-ar', lang === 'ar');
+    langToggle.textContent = lang === 'ar' ? 'EN' : 'ع';
+  }
+  let sloganLang = 'en';
+  try { sloganLang = localStorage.getItem('saqer-slogan-lang') || 'en'; } catch(e) {}
+  applyLang(sloganLang);
+  langToggle.addEventListener('click', () => {
+    sloganLang = sloganLang === 'ar' ? 'en' : 'ar';
+    try { localStorage.setItem('saqer-slogan-lang', sloganLang); } catch(e) {}
+    applyLang(sloganLang);
+  });
+
+  // Contact language toggle
+  const contactLangToggle = document.getElementById('contactLangToggle');
+  function applyContactLang(lang) {
+    document.getElementById('contactp').classList.toggle('lang-ar', lang === 'ar');
+    contactLangToggle.textContent = lang === 'ar' ? 'EN' : 'ع';
+  }
+  let contactLang = 'en';
+  try { contactLang = localStorage.getItem('saqer-contact-lang') || 'en'; } catch(e) {}
+  applyContactLang(contactLang);
+  contactLangToggle.addEventListener('click', () => {
+    contactLang = contactLang === 'ar' ? 'en' : 'ar';
+    try { localStorage.setItem('saqer-contact-lang', contactLang); } catch(e) {}
+    applyContactLang(contactLang);
+  });
+
+  // Contact form — Formspree submission
+  document.getElementById('cform').addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = document.getElementById('sendbtn');
+    const row = document.getElementById('sendrow');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      const res = await fetch('https://formspree.io/f/mjgdpaqw', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(e.target)
+      });
+      if (res.ok) {
+        row.innerHTML = '<span class="sent-msg">Message sent — thank you. شكراً لتواصلك</span>';
+      } else {
+        row.innerHTML = '<span class="error-msg">Something went wrong. Please try again.</span>';
+      }
+    } catch {
+      row.innerHTML = '<span class="error-msg">Connection error. Please try again.</span>';
+    }
+  });
+</script>
+</body>
+</html>
