@@ -264,15 +264,16 @@ button { border: none; cursor: pointer; background: transparent; }
 .field input::placeholder, .field textarea::placeholder { color: var(--muted-2); }
 .field input:focus, .field textarea:focus { border-bottom-color: var(--gold); }
 .field textarea { min-height: 90px; }
-.send-row { display: flex; align-items: center; gap: 16px; min-height: 44px; }
+.send-row { display: flex; align-items: center; gap: 16px; min-height: 48px; margin-top: 8px; }
 .send-btn {
-  background: transparent; color: var(--paper);
-  border: none; border-bottom: 1px solid var(--gold); border-radius: 0;
-  padding: 6px 2px; font-family: var(--grotesque); font-size: 15px; font-weight: 500;
-  letter-spacing: 0.04em; cursor: pointer; transition: color 0.25s;
-  display: inline-flex; align-items: center; gap: 9px; min-height: 44px;
+  width: 100%; justify-content: center;
+  background: var(--gold); color: var(--ink);
+  border: 1px solid var(--gold); border-radius: 8px;
+  padding: 12px 20px; font-family: var(--grotesque); font-size: 16px; font-weight: 600;
+  letter-spacing: 0.04em; cursor: pointer; transition: background 0.25s, color 0.25s;
+  display: inline-flex; align-items: center; gap: 10px; min-height: 48px;
 }
-.send-btn:hover { color: var(--gold); }
+.send-btn:hover { background: transparent; color: var(--gold); }
 .send-btn .arr { transition: transform 0.25s; }
 .send-btn:hover .arr { transform: translateX(4px); }
 .send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
@@ -289,9 +290,12 @@ button { border: none; cursor: pointer; background: transparent; }
   text-transform: uppercase; color: var(--muted-2);
 }
 
-/* email note under textarea */
+/* email note + postal address under the send button */
 .contact-email-note {
-  margin: 10px 0 0; font-size: 16px; color: var(--muted-2); line-height: 1.5;
+  margin: 18px 0 0; font-size: 16px; color: var(--muted-2); line-height: 1.5;
+}
+.contact-address {
+  margin: 14px 0 0; font-style: normal; font-size: 15px; color: var(--muted-2); line-height: 1.6;
 }
 .contact-email-note a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 .contact-email-note a:hover { color: var(--paper); }
