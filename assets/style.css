@@ -295,8 +295,9 @@ button { border: none; cursor: pointer; background: transparent; }
   margin: 18px 0 0; font-size: 16px; color: var(--muted-2); line-height: 1.5;
 }
 .contact-address {
-  margin: 14px 0 0; font-style: normal; font-size: 15px; color: var(--muted-2); line-height: 1.6;
+  margin: 48px 0 0; font-style: normal; font-size: 15px; color: var(--muted-2); line-height: 1.6;
 }
+.contact-address-title { color: #fff; font-weight: 600; }
 .contact-email-note a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 .contact-email-note a:hover { color: var(--paper); }
 
